@@ -1,0 +1,33 @@
+{
+  "name": "krishokbondhon-community-qna-service",
+  "version": "0.1.0",
+  "description": "Standalone Express + MongoDB scaffold for KrishokBondhon's community feed and Q&A features. Meant to be merged into the main API gateway.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "sequelize-cli db:migrate",
+    "migrate:undo": "sequelize-cli db:undo"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.21.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.0",
+    "pg": "^8.22.0",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "sequelize-cli": "^6.6.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
